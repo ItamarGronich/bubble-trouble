@@ -1,0 +1,39 @@
+/*general layout optimization*/
+
+html,
+body {
+  height: 100%;
+  overflow: hidden;
+  box-sizing: content-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+
+
+/*========================================================
+                  End Of General Layout
+  ========================================================*/
+
+/*=======================================================
+                  Layout Units
+  =======================================================*/
+
+/*full*/
+[data-layout="full"] {
+  width: 100%;
+  padding: .5rem;
+  display: table;
+}
+
+/*unit layout inside of full*/
+[data-layout="unit"] {
+  display: table-cell;
+  margin:.5rem 1rem;
+  padding: .3rem .5rem;
+}
+

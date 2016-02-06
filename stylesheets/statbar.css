@@ -1,0 +1,73 @@
+/*
+Main Color Pallet
+
+*/
+/*general layout optimization*/
+/* line 3, ../sass/layout.scss */
+html,
+body {
+  height: 100%;
+  overflow: hidden;
+  box-sizing: content-box;
+}
+
+/* line 10, ../sass/layout.scss */
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+/*========================================================
+                  End Of General Layout
+  ========================================================*/
+/*=======================================================
+                  Layout Units
+  =======================================================*/
+/*full*/
+/* line 27, ../sass/layout.scss */
+[data-layout="full"] {
+  width: 100%;
+  padding: .5rem;
+  display: table;
+}
+
+/*unit layout inside of full*/
+/* line 34, ../sass/layout.scss */
+[data-layout="unit"] {
+  display: table-cell;
+  margin: .5rem 1rem;
+  padding: .3rem .5rem;
+}
+
+/*layout*/
+/* line 10, ../../../../../var/lib/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/layout/_sticky-footer.scss */
+html, body {
+  height: 100%;
+}
+
+/* line 12, ../../../../../var/lib/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/layout/_sticky-footer.scss */
+#layout {
+  clear: both;
+  min-height: 100%;
+  height: auto !important;
+  height: 100%;
+  margin-bottom: -5rem;
+}
+/* line 18, ../../../../../var/lib/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/layout/_sticky-footer.scss */
+#layout #layout-footer {
+  height: 5rem;
+}
+
+/* line 20, ../../../../../var/lib/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/layout/_sticky-footer.scss */
+#footer {
+  clear: both;
+  position: relative;
+  height: 5rem;
+}
+
+/*colors*/
+/* line 9, ../sass/statbar.scss */
+#footer {
+  background: #1a1b1b;
+}

@@ -1,0 +1,23 @@
+@import "base";
+
+/*text color*/
+
+html {
+  color: $default-text-color;
+}
+
+/*background*/
+body {
+  background: $color-2;
+}
+
+
+/*typography*/
+
+html {
+  font-family: $default-font-family;
+}
+
+[data-typography="playful"] {
+  font-family: $font-playful;
+}

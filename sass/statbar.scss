@@ -1,0 +1,11 @@
+@import "base";
+
+/*layout*/
+
+@include sticky-footer(5rem, '#layout', '#layout-footer', '#footer');
+
+/*colors*/
+
+#footer {
+  background: $color-3;
+}
