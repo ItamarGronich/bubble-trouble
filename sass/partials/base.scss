@@ -1,0 +1,11 @@
+@mixin square($size: 15px) {
+  width: $size;
+  height: $size;
+}
+
+/*general layout optimization*/
+
+html,body {
+  height: 100%;
+  overflow: hidden;
+}

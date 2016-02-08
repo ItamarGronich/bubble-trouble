@@ -1,0 +1,6 @@
+/*general layout optimization*/
+/* line 8, ../../sass/partials/base.scss */
+html, body {
+  height: 100%;
+  overflow: hidden;
+}

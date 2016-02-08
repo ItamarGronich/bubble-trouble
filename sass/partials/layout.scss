@@ -1,0 +1,46 @@
+/*UNITS*/
+
+%walls {
+  position: absolute;
+  top: 0;
+  width: 2em;
+  height: 100%;
+}
+
+/*full*/
+[data-layout~="full"] {
+  width: 100%;
+  padding: .5rem;
+  display: table;
+}
+
+/*unit layout inside of full*/
+[data-layout~="unit"] {
+  display: table-cell;
+  margin:.5rem 1rem;
+  padding: .3rem .5rem;
+}
+
+
+/*Components*/
+[data-layout~="wall-right"] {
+ @extend %walls;
+  right: 0;
+}
+
+[data-layout~="wall-left"] {
+ @extend %walls;
+  left:0;
+}
+
+[data-layout~="wall-top"] {
+  @extend %walls;
+  left:0;
+  width: 100%;
+  height: 2em;
+}
+
+
+/*footer Stats bar module*/
+
+@include sticky-footer(5rem, '#layout', '#layout-footer', '#footer');

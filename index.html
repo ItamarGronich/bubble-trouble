@@ -8,27 +8,25 @@
     <!--[if IE]>
         <link href="/stylesheets/ie.css" media="screen, projection" rel="stylesheet" type="text/css" />
     <![endif]-->
-    <link rel="stylesheet" href="stylesheets/default-styles.css">
-    <link rel="stylesheet" href="stylesheets/statbar.css">
-    <link rel="stylesheet" href="stylesheets/bubble.css">
+    <link rel="stylesheet" href="stylesheets/style.css">
 
 </head>
 <body>
-<div class="bubbles"></div>
-<div class="bubbles"></div>
-<div class="bubbles"></div>
-<div class="bubbles"></div>
+<div data-bubbles="big green" style="left: 200px;"></div>
+<div data-bubbles="medium yellow" style="left: 300px;"></div>
+<div data-bubbles="medium orange" style="left: 400px;"></div>
+<div data-bubbles="small blue" style="left: 500px;"></div>
 <div id="layout">
-    <div id="leftWall" data-color="background-mediumgrey"></div>
-    <div id="topWall" data-color="background-mediumgrey"></div>
+    <div data-layout="wall-top" data-color="background-bricks"></div>
+    <div data-layout="wall-left" data-color="background-bricks"></div>
     <div id="main">
 
 
     </div>
-    <div id="rightWall" data-color="background-mediumgrey"></div>
-    <div id="layot-footer"></div>
+    <div data-layout="wall-right" data-color="background-bricks"></div>
+    <div id="layout-footer"></div>
 </div>
-<div id="footer" data-layout="full">
+<div id="footer" data-layout="full" data-color="background-bricks">
     <div data-layout="unit">Time</div>
     <div data-layout="unit">Score</div>
     <div data-layout="unit">Lvl</div>

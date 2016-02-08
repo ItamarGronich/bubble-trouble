@@ -66,3 +66,16 @@ a img {
 article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
   display: block;
 }
+
+/* line 10, ../sass/screen.scss */
+html,
+body {
+  box-sizing: content-box;
+}
+
+/* line 15, ../sass/screen.scss */
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}

@@ -1,0 +1,52 @@
+/*bubbles module*/
+
+%bubbles {
+  position: absolute;
+  overflow: hidden;
+  border-radius: 50%;
+  bottom: 35%;
+}
+
+[data-bubbles] {
+  @extend %bubbles;
+}
+
+[data-bubbles~="big"] {
+  @extend %bubbles;
+  @include square(80px);
+}
+
+[data-bubbles~="medium"] {
+  @extend %bubbles;
+  @include square(40px);
+}
+
+[data-bubbles~="small"] {
+  @extend %bubbles;
+  @include square(20px);
+}
+
+[data-bubbles~="extra-small"] {
+  @extend %bubbles;
+  @include square(15px);
+}
+
+[data-bubbles~="red"] {
+  @extend %red-background;
+}
+
+[data-bubbles~="green"] {
+  @extend %green-background;
+}
+
+[data-bubbles~="blue"] {
+  @extend %blue-background;
+}
+
+[data-bubbles~="yellow"] {
+  @extend %yellow-background;
+}
+
+[data-bubbles~="orange"] {
+  @extend %orange-background;
+}

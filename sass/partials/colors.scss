@@ -1,0 +1,55 @@
+/*
+Main Color Pallet
+
+*/
+
+$lightGray: rgb(141, 145, 145);
+$mediumGrey: rgb(95, 96, 96);
+$darkGrey: rgb(79, 80, 80);
+$black: rgb(26, 27, 27);
+
+/*Secondary colors*/
+$yellow: rgb(251, 234, 48);
+$red: rgb(255, 80, 70);
+$green: rgb(70, 255, 80);
+$orange: rgb(255, 144, 70);
+$blue: rgb(73, 141, 255);
+
+
+/*Extendables*/
+%brickBackground{
+  background-color: $lightGray;
+  background-image: linear-gradient(335deg, $mediumGrey 23px, transparent 23px),
+  linear-gradient(155deg, $darkGrey 23px, transparent 23px),
+  linear-gradient(335deg, $mediumGrey 23px, transparent 23px),
+  linear-gradient(155deg, $darkGrey 23px, transparent 23px);
+  background-size: 58px 58px;
+  background-position: 0px 2px, 4px 35px, 29px 31px, 34px 6px;
+}
+
+%yellow-background {
+  background: $yellow;
+}
+
+%red-background {
+  background: $red;
+}
+
+%green-background {
+  background: $green;
+}
+
+%orange-background {
+  background: $orange;
+}
+
+%blue-background {
+  background: $blue;
+}
+
+$default-text-color: white;
+
+[data-color~="background-bricks"] {
+  @extend %brickBackground;
+}
+
