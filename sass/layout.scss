@@ -24,16 +24,41 @@ body {
   =======================================================*/
 
 /*full*/
-[data-layout="full"] {
+[data-layout~="full"] {
   width: 100%;
   padding: .5rem;
   display: table;
 }
 
 /*unit layout inside of full*/
-[data-layout="unit"] {
+[data-layout~="unit"] {
   display: table-cell;
   margin:.5rem 1rem;
   padding: .3rem .5rem;
 }
 
+
+/*Components*/
+#rightWall {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 2em;
+  height: 100%;
+}
+
+#leftWall {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 2em;
+  height: 100%;
+}
+
+#topWall {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 2em;
+  width: 100%;
+}

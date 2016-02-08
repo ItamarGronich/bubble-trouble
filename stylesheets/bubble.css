@@ -73,34 +73,38 @@ body {
   width: 100%;
 }
 
-/*layout*/
-/* line 10, ../../../../../var/lib/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/layout/_sticky-footer.scss */
-html, body {
-  height: 100%;
+/* line 7, ../sass/bubble.scss */
+.bubbles {
+  position: absolute;
+  overflow: hidden;
+  background: #fbea30;
+  border-radius: 50%;
 }
-
-/* line 12, ../../../../../var/lib/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/layout/_sticky-footer.scss */
-#layout {
-  clear: both;
-  min-height: 100%;
-  height: auto !important;
-  height: 100%;
-  margin-bottom: -5rem;
+/* line 13, ../sass/bubble.scss */
+.bubbles:nth-child(1) {
+  bottom: 600px;
+  left: 243px;
+  width: 30px;
+  height: 30px;
 }
-/* line 18, ../../../../../var/lib/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/layout/_sticky-footer.scss */
-#layout #layout-footer {
-  height: 5rem;
+/* line 19, ../sass/bubble.scss */
+.bubbles:nth-child(2) {
+  bottom: 500px;
+  left: 450px;
+  width: 100px;
+  height: 100px;
 }
-
-/* line 20, ../../../../../var/lib/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/layout/_sticky-footer.scss */
-#footer {
-  clear: both;
-  position: relative;
-  height: 5rem;
+/* line 25, ../sass/bubble.scss */
+.bubbles:nth-child(3) {
+  bottom: 600px;
+  left: 100px;
+  width: 10px;
+  height: 10px;
 }
-
-/*colors*/
-/* line 9, ../sass/statbar.scss */
-#footer {
-  background: #1a1b1b;
+/* line 31, ../sass/bubble.scss */
+.bubbles:nth-child(4) {
+  bottom: 600px;
+  left: 700px;
+  width: 15px;
+  height: 15px;
 }

@@ -10,11 +10,22 @@
     <![endif]-->
     <link rel="stylesheet" href="stylesheets/default-styles.css">
     <link rel="stylesheet" href="stylesheets/statbar.css">
+    <link rel="stylesheet" href="stylesheets/bubble.css">
 
 </head>
 <body>
+<div class="bubbles"></div>
+<div class="bubbles"></div>
+<div class="bubbles"></div>
+<div class="bubbles"></div>
 <div id="layout">
-    <div id="main"></div>
+    <div id="leftWall" data-color="background-mediumgrey"></div>
+    <div id="topWall" data-color="background-mediumgrey"></div>
+    <div id="main">
+
+
+    </div>
+    <div id="rightWall" data-color="background-mediumgrey"></div>
     <div id="layot-footer"></div>
 </div>
 <div id="footer" data-layout="full">
@@ -25,9 +36,13 @@
 
 
 <script type="text/javascript" src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
-<script type="text/javascript" src="JS/libraries/Underdash-compiled.js"></script>
+<script type="text/javascript" src="JS/libraries/Underdash.js"></script>
+<script type="text/javascript" src="JS/libraries/helpers.js"></script>
+<script type="text/javascript" src="JS/physics.js"></script>
 <script type="text/javascript" src="JS/init.js"></script>
 <script type="text/javascript" src="JS/controller.js"></script>
+<script type="text/javascript" src="JS/bubble-animation.js"></script>
+
 
 </body>
 </html>
